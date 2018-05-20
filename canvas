@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="lv">
+
+<head>
+<meta charset="utf-8"/>
+<center>
+<body> 
+<script>
+ 
+ 
+ window.onload=function() {
+ c = document.getElementById("ccc");
+ var ctx=c.getContext('2d');
+
+ //īēšzmanas kods
+ ctx.fillStyle="blue";
+ ctx.fillRect(70,70,100,50);
+ ctx.stroke();
+
+ 
+}
+
+
+ </script>
+
+<p>
+Taisnstūris
+ <br>
+ <canvas width=250 height=200 id="ccc" style="border:1px solid #d3d3d3;"></canvas>
+</p>
+
+
+
+Līnija
+<br>
+
+<canvas id="aaa" width="250" height="200" style="border:1px solid #d3d3d3;"></canvas>
+
+
+
+<script>
+var c = document.getElementById("aaa");
+var ctx = c.getContext("2d");
+ctx.moveTo(20,0);
+ctx.lineTo(230,200);
+ctx.stroke();
+</script>
+
+<br><br>
+
+Lauzta līnija
+<br>
+
+<canvas id="ddd" width="250" height="" style="border:1px solid #d3d3d3;"></canvas>
+
+
+<script>
+var c = document.getElementById("ddd");
+var ctx = c.getContext("2d");
+ctx.moveTo(0,20);
+ctx.lineTo(30,65,);
+ctx.lineTo(65,90,);
+ctx.lineTo(90,120,);
+ctx.lineTo(120,80,);
+ctx.lineTo(80,170,);
+ctx.lineTo(170,200,);
+
+ctx.stroke();
+
+
+</script>
+
+<br><br>
+Aplis
+<br>
+
+<canvas id="bbb" width="250" height="200" style="border:1px solid #d3d3d3;"></canvas>
+
+<script>
+var c = document.getElementById("bbb");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.arc(120,100,70,0,2*Math.PI);
+ctx.fillStyle = 'yellow';
+ctx.fill();
+ctx.stroke();
+</script> 
+
+
+<br><br>
+
+Elipse
+<br>
+
+<canvas id="eee" width="250" height="200" style="border:1px solid #d3d3d3;"></canvas>
+
+<script>
+var c = document.getElementById("eee");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.ellipse(120,100,50,75,90*Math.PI/180,0,2*Math.PI);
+ctx.fillStyle = 'lime';
+ctx.fill();
+ctx.stroke();
+</script>
+
+<br>
+<br>
+Daudzstūris
+<br>
+
+<canvas id="fff"  width="250" height="200" style="border:1px solid #d3d3d3;"></canvas>
+
+<script>
+var c = document.getElementById("fff");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.moveTo(140, 80);
+ctx.lineTo(70,100);
+ctx.lineTo(50, 90);
+ctx.lineTo(50, 40);
+ctx.lineTo(140, 80);
+ctx.fillStyle = 'purple';
+ctx.fill();
+
+ctx.stroke();
+</script>
+
+
+<div class="container_div" style="position:relative;">
+    <div class="hover_div" style="position:absolute; width:25px !important; display:block;z-index:9999">                            
+        
+    </div>
+
+</div>
+
+
+</body>
+</center>
+</html>
